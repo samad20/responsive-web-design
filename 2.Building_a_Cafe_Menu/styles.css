@@ -1,0 +1,98 @@
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif;
+    padding:20px;
+  }
+  
+  h1, h2, p {
+    text-align: center;
+  }
+
+  h1, h2 {
+    font-family: Impact,serif;
+
+  }
+
+  h1{
+    margin-top: 0px;
+    margin-bottom: 15px;
+    font-size: 40px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  hr{
+    /* Notice how the thickness of the line looks bigger? The default value of a property named border-width is 1px for all edges of hr elements. By changing the border to the same color as the background, the total height of the line is 5px (3px plus the top and bottom border width of 1px). */
+    height: 2px;
+    background-color: brown;
+  border-color: brown;
+  }
+  
+  .menu {
+    /* width of the menu will always take up 80% of the body element's width */
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    /* Since all 4 sides of the menu have the same internal spacing, go ahead and delete the four properties and use a single padding property with the value 20px.
+    padding-left:20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+    padding: 20px;
+  }
+  img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: -25px;
+  }
+  .established{
+    font-style: italic;
+  }
+  
+  .item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  .bottom-line{
+    /* Changing the margin-bottom to 5px looks great. However, now the space between the Cinnamon Roll menu item and the second hr element does not match the space between the top hr element and the Coffee heading. */
+    margin-top:25px;
+  }
+  
+  .flavor, .dessert {
+    text-align: left;
+    width: 50%;
+  }
+  
+  .price {
+    text-align: right;
+    width: 50%;
+  }
+
+  /* FOOTER */
+
+  footer{
+    font-size: 14px;
+  }
+  .address{
+    margin-bottom :5px;
+  }
+  a{
+    color: black;
+  }
+  a:visited { 
+    /* You change properties of a link when the link has actually been visited by using a pseudo-selector that looks like a:visited { propertyName: propertyValue; }. */
+    color: black; 
+  }
+  a:hover{
+    /* You change properties of a link when the mouse hovers over them by using a pseudo-selector that looks like a:hover { propertyName: propertyValue; } */
+     color: brown;
+  }
+
+  a:active{
+    /* You change properties of a link when the link is actually being clicked by using a pseudo-selector that looks like a:active { propertyName: propertyValue; }. */
+    color:brown;
+  }
