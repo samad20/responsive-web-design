@@ -89,15 +89,10 @@
                     <legend>
                         Is your cat an indoor or outdoor cat? 
                     </legend>
-                    <label>
-                        <!-- To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value. -->
-                        <input type="radio" id="indoor" value="indoor" name="indoor-outdoor"> Indoor
-                    </label> 
-                
-                    <label>
-                        <!-- To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value. -->
-                        <input type="radio" id="outdoor" value="outdoor" name="indoor-outdoor"> Outdoor
-                    </label>
+
+                    <!-- To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value. -->
+                    <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked> Indoor</label>
+                    <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
                 </fieldset>
                 
                 <fieldset>
@@ -109,10 +104,10 @@
                     <!-- There's another way to associate an input element's text with the element itself. You can nest the text within a label element and add a for attribute with the same value as the input element's id attribute -->
                     <label for="loving">Loving</label>
 
-                    <input type="checkbox" id="lazy" name="personality" value="lazy" checked>
+                    <input type="checkbox" id="lazy" name="personality" value="lazy">
                     <label for="lazy">Lazy</label>
 
-                    <input type="checkbox" id="energetic" name="personality" value="energetic" checked>
+                    <input type="checkbox" id="energetic" name="personality" value="energetic">
                     <label for="energetic">Energetic</label>
                 </fieldset>
                 
